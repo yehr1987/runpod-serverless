@@ -3,6 +3,8 @@
     {
       "name": "basic_transcribe",
       "input": {
+        "engine": "faster-whisper",
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
         "streaming": false,
         "transcribe_args": {
           "url": "https://github.com/metaldaniel/HebrewASR-Comparison/raw/main/HaTankistiot_n12-mp3.mp3",
