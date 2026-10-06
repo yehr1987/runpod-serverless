@@ -1,5 +1,22 @@
 {
   "tests": [
+    {
+      "name": "basic_transcribe",
+      "input": {
+        "streaming": false,
+        "transcribe_args": {
+          "url": "https://github.com/metaldaniel/HebrewASR-Comparison/raw/main/HaTankistiot_n12-mp3.mp3",
+          "language": "he",
+          "diarize": false,
+          "verbose": false,
+          "asr_options": {
+            "beam_size": 5,
+            "condition_on_previous_text": false
+          }
+        }
+      },
+      "timeout": 900000
+    }
   ],
   "config": {
     "gpuId": "AMPERE_16,AMPERE_24,ADA_24",
